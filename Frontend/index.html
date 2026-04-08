@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rishi — AI-Powered Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">R<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Let's Talk</a>
+    <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <span class="mobile-close" id="mobile-close">✕</span>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="badge-dot"></span>Open to new projects</div>
+      <h1 class="hero-heading">
+        <span class="line">I Build Scalable</span>
+        <span class="line">Digital Systems &</span>
+        <span class="line accent-text">AI Products</span>
+      </h1>
+      <p class="hero-sub">Full Stack Developer · AI Agent Builder · Digital Strategist<br/>Turning complex ideas into high-performance digital realities.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn-primary">Explore Work <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="contact.html" class="btn-secondary">Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num" data-count="50">0+</div><div class="stat-label">Projects Shipped</div></div>
+        <div class="stat-item"><div class="stat-num" data-count="3">0+</div><div class="stat-label">Years Building</div></div>
+        <div class="stat-item"><div class="stat-num" data-count="20">0+</div><div class="stat-label">Happy Clients</div></div>
+      </div>
+    </div>
+    <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="section-preview" style="background:var(--bg2)">
+    <div class="section-inner">
+      <div class="section-tag reveal">What I Do</div>
+      <h2 class="section-heading reveal reveal-d1">Services <span>I Offer</span></h2>
+      <div class="services-grid-home">
+        <div class="svc-card reveal reveal-d1">
+          <div class="svc-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Pixel-perfect interfaces that convert visitors into clients.</p>
+          <div class="svc-tags"><span>Figma</span><span>Prototyping</span><span>Design Systems</span></div>
+        </div>
+        <div class="svc-card reveal reveal-d2">
+          <div class="svc-icon">💻</div>
+          <h3>Full Stack Dev</h3>
+          <p>End-to-end web applications built for scale and performance.</p>
+          <div class="svc-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+        </div>
+        <div class="svc-card reveal reveal-d3">
+          <div class="svc-icon">🤖</div>
+          <h3>AI Chatbots</h3>
+          <p>24/7 intelligent agents that automate leads, support, and sales.</p>
+          <div class="svc-tags"><span>GPT-4</span><span>NLP</span><span>Automation</span></div>
+        </div>
+        <div class="svc-card reveal reveal-d4">
+          <div class="svc-icon">⚡</div>
+          <h3>Performance</h3>
+          <p>Blazing-fast, SEO-optimised sites that rank and retain.</p>
+          <div class="svc-tags"><span>Core Web Vitals</span><span>SEO</span><span>CDN</span></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px"><a href="services.html" class="btn-primary">View All Services</a></div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="section-preview">
+    <div class="section-inner">
+      <div class="section-tag reveal">Work</div>
+      <h2 class="section-heading reveal reveal-d1">Featured <span>Projects</span></h2>
+      <div class="projects-grid-home">
+        <div class="proj-card reveal reveal-d1">
+          <div class="proj-visual pv-ai">🤖</div>
+          <div class="proj-body">
+            <span class="proj-cat">AI Agents</span>
+            <h3>AutoAgent Framework</h3>
+            <p>Multi-agent orchestration system for autonomous task handling.</p>
+            <div class="proj-tech"><span>Python</span><span>LangChain</span><span>OpenAI</span></div>
+            <a href="projects.html" class="btn-link">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card reveal reveal-d2">
+          <div class="proj-visual pv-web">💻</div>
+          <div class="proj-body">
+            <span class="proj-cat">Web Apps</span>
+            <h3>SaaS Dashboard Pro</h3>
+            <p>Real-time analytics dashboard with RBAC and team collaboration.</p>
+            <div class="proj-tech"><span>Next.js</span><span>TypeScript</span><span>Supabase</span></div>
+            <a href="projects.html" class="btn-link">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card reveal reveal-d3">
+          <div class="proj-visual pv-content">📱</div>
+          <div class="proj-body">
+            <span class="proj-cat">Content Systems</span>
+            <h3>ContentFlow OS</h3>
+            <p>End-to-end content operations with multi-platform distribution.</p>
+            <div class="proj-tech"><span>Node.js</span><span>OpenAI</span><span>Notion API</span></div>
+            <a href="projects.html" class="btn-link">View Project →</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px"><a href="projects.html" class="btn-secondary">View All Projects</a></div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY STRIP -->
+  <section style="background:var(--bg2);padding:80px 40px">
+    <div class="section-inner">
+      <div class="philosophy-strip">
+        <div class="phil-item reveal"><span class="phil-num">01</span><span class="phil-text">Execution over ideas</span></div>
+        <div class="phil-sep">—</div>
+        <div class="phil-item reveal reveal-d1"><span class="phil-num">02</span><span class="phil-text">Systems over shortcuts</span></div>
+        <div class="phil-sep">—</div>
+        <div class="phil-item reveal reveal-d2"><span class="phil-num">03</span><span class="phil-text">Speed with precision</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section style="padding:100px 40px">
+    <div class="section-inner">
+      <div class="cta-banner reveal">
+        <div class="cta-glow"></div>
+        <h2>Ready to build something <span>remarkable?</span></h2>
+        <p>Let's turn your idea into a product that scales.</p>
+        <a href="contact.html" class="btn-primary">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Rishi<span>.</span></div>
+      <p>© 2025 Rishi. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="services.html">Services</a>
+        <a href="projects.html">Work</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHATBOT WIDGET -->
+  <div id="chat-fab" title="Chat with AI Assistant">
+    <div class="fab-ring"></div>
+    <span class="fab-icon">💬</span>
+    <span class="fab-badge">1</span>
+  </div>
+  <div id="chat-window" class="chat-hidden">
+    <div id="chat-header">
+      <div class="chat-avatar">R</div>
+      <div class="chat-header-info">
+        <strong>Rishi's AI Assistant</strong>
+        <span class="chat-status"><span class="status-dot"></span>Online</span>
+      </div>
+      <button id="chat-close">✕</button>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="chat-typing" class="hidden"><span></span><span></span><span></span></div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type a message…" autocomplete="off"/>
+      <button id="chat-send">➤</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

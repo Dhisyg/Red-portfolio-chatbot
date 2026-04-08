@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Rishi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <nav id="navbar">
+    <div class="nav-logo">R<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Let's Talk</a>
+    <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <span class="mobile-close" id="mobile-close">✕</span>
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="hero-orb hero-orb-1" style="opacity:0.1"></div>
+    <div class="hero-grid"></div>
+    <div class="page-hero-content">
+      <div class="section-tag reveal">Projects</div>
+      <h1 class="section-heading reveal reveal-d1" style="font-size:clamp(40px,7vw,80px)">Selected <span>Work</span></h1>
+      <p class="section-sub reveal reveal-d2">A curated selection of systems, products, and experiments.</p>
+    </div>
+  </div>
+
+  <section style="padding:100px 40px;background:var(--bg2)">
+    <div class="section-inner">
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI Agents</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="affiliate">Affiliate</button>
+        <button class="filter-btn" data-filter="content">Content</button>
+      </div>
+      <div class="projects-full-grid" id="projects-grid">
+        <div class="proj-card-full reveal reveal-d1" data-cat="ai">
+          <div class="proj-visual-full pv-ai">🤖</div>
+          <div class="proj-body">
+            <span class="proj-cat">AI Agents</span>
+            <h3>AutoAgent Framework</h3>
+            <p>An intelligent multi-agent orchestration system capable of handling complex, multi-step tasks autonomously with dynamic tool use and memory management.</p>
+            <div class="proj-tech"><span>Python</span><span>LangChain</span><span>OpenAI</span><span>FastAPI</span><span>Redis</span></div>
+            <a href="#" class="btn-primary" style="margin-top:20px;display:inline-flex">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card-full reveal reveal-d2" data-cat="web">
+          <div class="proj-visual-full pv-web">💻</div>
+          <div class="proj-body">
+            <span class="proj-cat">Web Apps</span>
+            <h3>SaaS Dashboard Pro</h3>
+            <p>A high-performance analytics dashboard with real-time data visualisation, RBAC, team collaboration, and a full billing integration via Stripe.</p>
+            <div class="proj-tech"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>Tailwind</span><span>Stripe</span></div>
+            <a href="#" class="btn-primary" style="margin-top:20px;display:inline-flex">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card-full reveal reveal-d1" data-cat="affiliate">
+          <div class="proj-visual-full pv-aff">🌿</div>
+          <div class="proj-body">
+            <span class="proj-cat">Affiliate Sites</span>
+            <h3>Niche Authority Engine</h3>
+            <p>A fully automated affiliate website system with SEO-optimised content generation, programmatic pages, internal linking, and monetisation integrations.</p>
+            <div class="proj-tech"><span>WordPress</span><span>Python</span><span>SEO</span><span>GPT-4</span><span>WooCommerce</span></div>
+            <a href="#" class="btn-primary" style="margin-top:20px;display:inline-flex">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card-full reveal reveal-d2" data-cat="content">
+          <div class="proj-visual-full pv-content">📱</div>
+          <div class="proj-body">
+            <span class="proj-cat">Content Systems</span>
+            <h3>ContentFlow OS</h3>
+            <p>An end-to-end content operations system that automates research, drafting, scheduling, and multi-platform distribution at scale using AI pipelines.</p>
+            <div class="proj-tech"><span>Node.js</span><span>OpenAI</span><span>Notion API</span><span>Zapier</span><span>Buffer API</span></div>
+            <a href="#" class="btn-primary" style="margin-top:20px;display:inline-flex">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card-full reveal reveal-d1" data-cat="web">
+          <div class="proj-visual-full pv-web">🛒</div>
+          <div class="proj-body">
+            <span class="proj-cat">Web Apps</span>
+            <h3>E-Commerce Platform</h3>
+            <p>A custom-built e-commerce solution with AI-powered product recommendations, dynamic pricing, and a headless CMS for easy content management.</p>
+            <div class="proj-tech"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span><span>Algolia</span></div>
+            <a href="#" class="btn-primary" style="margin-top:20px;display:inline-flex">View Project →</a>
+          </div>
+        </div>
+        <div class="proj-card-full reveal reveal-d2" data-cat="ai">
+          <div class="proj-visual-full pv-ai">🧠</div>
+          <div class="proj-body">
+            <span class="proj-cat">AI Agents</span>
+            <h3>LeadBot Pro</h3>
+            <p>A sales-focused AI chatbot deployed across website and WhatsApp. Qualifies leads, answers FAQs, books calls, and sends email notifications 24/7.</p>
+            <div class="proj-tech"><span>GPT-4</span><span>Twilio</span><span>Node.js</span><span>MongoDB</span><span>Nodemailer</span></div>
+            <a href="#" class="btn-primary" style="margin-top:20px;display:inline-flex">View Project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 40px">
+    <div class="section-inner">
+      <div class="cta-banner reveal">
+        <div class="cta-glow"></div>
+        <h2>Have a project in mind? <span>Let's talk.</span></h2>
+        <p>I take on a limited number of projects each month to ensure quality.</p>
+        <a href="contact.html" class="btn-primary">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Rishi<span>.</span></div>
+      <p>© 2025 Rishi. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="services.html">Services</a>
+        <a href="projects.html">Work</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="chat-fab" title="Chat with AI Assistant">
+    <div class="fab-ring"></div><span class="fab-icon">💬</span><span class="fab-badge">1</span>
+  </div>
+  <div id="chat-window" class="chat-hidden">
+    <div id="chat-header">
+      <div class="chat-avatar">R</div>
+      <div class="chat-header-info"><strong>Rishi's AI Assistant</strong><span class="chat-status"><span class="status-dot"></span>Online</span></div>
+      <button id="chat-close">✕</button>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="chat-typing" class="hidden"><span></span><span></span><span></span></div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type a message…" autocomplete="off"/>
+      <button id="chat-send">➤</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // Filter logic
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll('.proj-card-full').forEach(c => {
+          c.style.display = (f === 'all' || c.dataset.cat === f) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Rishi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <nav id="navbar">
+    <div class="nav-logo">R<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li><li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Let's Talk</a>
+    <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <span class="mobile-close" id="mobile-close">✕</span>
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-hero" style="min-height:40vh">
+    <div class="hero-orb hero-orb-1" style="opacity:0.1"></div>
+    <div class="hero-grid"></div>
+    <div class="page-hero-content">
+      <div class="section-tag reveal">Contact</div>
+      <h1 class="section-heading reveal reveal-d1" style="font-size:clamp(40px,7vw,80px)">Let's Build <span>Together</span></h1>
+      <p class="section-sub reveal reveal-d2">Have a project? I'd love to hear about it.</p>
+    </div>
+  </div>
+
+  <section style="padding:100px 40px;background:var(--bg2)">
+    <div class="section-inner">
+      <div class="contact-full-grid">
+        <!-- LEFT INFO -->
+        <div class="contact-info-col reveal">
+          <h2 class="section-heading" style="margin-bottom:16px">Get in <span>Touch</span></h2>
+          <p style="font-size:15px;color:var(--gray);line-height:1.8;font-weight:300;margin-bottom:40px;max-width:360px">Whether you have a project idea, a question, or just want to say hello — my inbox is always open.</p>
+          <div class="contact-links">
+            <a href="mailto:rishuchaudhuri11@gmail.com" class="contact-link">
+              <div class="contact-link-icon">📧</div>
+              <div class="contact-link-info"><strong>Email</strong><span>rishuchaudhuri11@gmail.com</span></div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+            <a href="https://instagram.com/plutoplant_" target="_blank" class="contact-link">
+              <div class="contact-link-icon">📸</div>
+              <div class="contact-link-info"><strong>Instagram</strong><span>@plutoplant_</span></div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+            <a href="https://t.me/plutoplant" target="_blank" class="contact-link">
+              <div class="contact-link-icon">✈️</div>
+              <div class="contact-link-info"><strong>Telegram</strong><span>t.me/plutoplant</span></div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+            <a href="https://github.com/Dhisyg" target="_blank" class="contact-link">
+              <div class="contact-link-icon">🐙</div>
+              <div class="contact-link-info"><strong>GitHub</strong><span>github.com/Dhisyg</span></div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-col reveal reveal-d2">
+          <div class="contact-form-card">
+            <h3 style="font-family:var(--font-head);font-size:22px;font-weight:700;margin-bottom:28px">Send a Message</h3>
+            <div id="form-alert" class="form-alert hidden"></div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" id="f-name" placeholder="John Doe" required/>
+              </div>
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" id="f-email" placeholder="john@example.com" required/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>WhatsApp / Phone</label>
+                <input type="text" id="f-phone" placeholder="+1 234 567 8900"/>
+              </div>
+              <div class="form-group">
+                <label>Service Needed</label>
+                <select id="f-service">
+                  <option value="">Select a service…</option>
+                  <option>Build My Website</option>
+                  <option>Create Landing Page</option>
+                  <option>Add AI Chatbot</option>
+                  <option>UI/UX Design</option>
+                  <option>Performance Optimization</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Budget Range</label>
+              <select id="f-budget">
+                <option value="">Select budget…</option>
+                <option>Under $300</option><option>$300–$800</option>
+                <option>$800–$1500</option><option>$1500+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Project Details *</label>
+              <textarea id="f-message" rows="5" placeholder="Tell me about your project, goals, timeline…" required></textarea>
+            </div>
+            <button class="btn-primary" id="submit-btn" style="width:100%;justify-content:center;padding:16px" onclick="submitContactForm()">
+              <span id="submit-text">Send Message</span>
+              <span id="submit-spinner" class="hidden">Sending…</span>
+            </button>
+            <p style="font-size:11px;color:var(--gray2);text-align:center;margin-top:12px">I typically respond within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Rishi<span>.</span></div>
+      <p>© 2025 Rishi. All rights reserved.</p>
+      <div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Work</a><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+
+  <div id="chat-fab" title="Chat with AI Assistant">
+    <div class="fab-ring"></div><span class="fab-icon">💬</span><span class="fab-badge">1</span>
+  </div>
+  <div id="chat-window" class="chat-hidden">
+    <div id="chat-header">
+      <div class="chat-avatar">R</div>
+      <div class="chat-header-info"><strong>Rishi's AI Assistant</strong><span class="chat-status"><span class="status-dot"></span>Online</span></div>
+      <button id="chat-close">✕</button>
+    </div>
+    <div id="chat-messages"></div>
+    <div id="chat-typing" class="hidden"><span></span><span></span><span></span></div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type a message…" autocomplete="off"/>
+      <button id="chat-send">➤</button>
+    </div>
+  </div>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // ---- CONTACT FORM: EmailJS ----
+    // EmailJS sends directly from browser — no backend needed.
+    // SETUP STEPS:
+    //   1. Go to https://www.emailjs.com/ and create a free account
+    //   2. Add a Gmail service (connect rishuchaudhuri11@gmail.com)
+    //   3. Create an email template with variables: {{from_name}}, {{from_email}}, {{phone}}, {{service}}, {{budget}}, {{message}}
+    //   4. Replace YOUR_PUBLIC_KEY, YOUR_SERVICE_ID, YOUR_TEMPLATE_ID below
+
+    emailjs.init("YOUR_PUBLIC_KEY"); // ← Replace with your EmailJS Public Key
+
+    function submitContactForm() {
+      const name    = document.getElementById('f-name').value.trim();
+      const email   = document.getElementById('f-email').value.trim();
+      const phone   = document.getElementById('f-phone').value.trim();
+      const service = document.getElementById('f-service').value;
+      const budget  = document.getElementById('f-budget').value;
+      const message = document.getElementById('f-message').value.trim();
+      const alert   = document.getElementById('form-alert');
+      const btn     = document.getElementById('submit-btn');
+      const txtEl   = document.getElementById('submit-text');
+      const spinEl  = document.getElementById('submit-spinner');
+
+      if (!name || !email || !message) {
+        showAlert('error', '⚠️ Please fill in all required fields.');
+        return;
+      }
+      if (!/\S+@\S+\.\S+/.test(email)) {
+        showAlert('error', '⚠️ Please enter a valid email address.');
+        return;
+      }
+
+      btn.disabled = true;
+      txtEl.classList.add('hidden');
+      spinEl.classList.remove('hidden');
+
+      const params = {
+        from_name:  name,
+        from_email: email,
+        phone:      phone || 'Not provided',
+        service:    service || 'Not specified',
+        budget:     budget || 'Not specified',
+        message:    message,
+        to_email:   'rishuchaudhuri11@gmail.com'
+      };
+
+      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)  // ← Replace IDs
+        .then(() => {
+          showAlert('success', '✅ Message sent! I\'ll get back to you within 24 hours.');
+          document.getElementById('f-name').value = '';
+          document.getElementById('f-email').value = '';
+          document.getElementById('f-phone').value = '';
+          document.getElementById('f-service').value = '';
+          document.getElementById('f-budget').value = '';
+          document.getElementById('f-message').value = '';
+        })
+        .catch(err => {
+          console.error(err);
+          showAlert('error', '❌ Something went wrong. Please email me directly at rishuchaudhuri11@gmail.com');
+        })
+        .finally(() => {
+          btn.disabled = false;
+          txtEl.classList.remove('hidden');
+          spinEl.classList.add('hidden');
+        });
+    }
+
+    function showAlert(type, msg) {
+      const el = document.getElementById('form-alert');
+      el.textContent = msg;
+      el.className = 'form-alert ' + type;
+    }
+  </script>
+</body>
+</html>
